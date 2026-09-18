@@ -20,7 +20,7 @@ def verify_password(
 )->bool:
     return pwd_context.verify(plain_passwoord,hash_password)
 
-def create_access_toke(
+def create_access_token(
         data:dict,
         expires_delta:timedelta|None=None
 ):
